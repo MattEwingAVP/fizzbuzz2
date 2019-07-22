@@ -1,0 +1,33 @@
+package fizzbuzz2;
+
+/**
+ *
+ * MattEwingAVP
+ */
+public class Fizzbuzz2 {
+
+   
+    public static void main(String[] args) {
+        
+        for(int i = 1; i <= 100; i++)
+        {
+            String firework = "";
+            firework +=(i % 1) ==0 ? "whoosh " : "";
+            firework += (i % 2) ==0 ? "bang " : "";
+            firework += (i % 3) ==0 ? "fizz " : "";
+            firework += (i % 5) ==0 ? "buzz " : "";
+            firework += (i % 7) ==0 ? "whizz " : "";
+            firework += (i % 6) ==0 ? "sizzle " : "";
+            firework += (i % 25) ==0 ? "crackle " : "";
+            firework += (i % 50) ==0 ? "ping " : "";
+            firework += (i % 10) ==2 ? "zap " : "";
+            firework += (i % 3) ==2 ? "kaboom " : "";
+            firework += (i % 4) ==2 ? "boom " : "";
+            firework += (i % 8) ==0 ? "zam " : "";
+            System.out.println(!firework.isEmpty() ? firework: i);
+            
+        }
+        
+    }
+    
+}
